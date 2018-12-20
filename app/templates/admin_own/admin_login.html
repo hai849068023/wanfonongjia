@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>万佛农家后台管理系统</title>
+</head>
+<body>
+    {{ data }}
+    <a href="{{ url_for('admin.adminRegister') }}">去注册</a>
+    <form method="POST" action="/admin/login">
+    {{ form.csrf_token }}
+    {{ form.wxname.label }} {{ form.wxname(size=20) }}
+    {{ form.password.label }} {{ form.password(size=20) }}
+    {{ form.submit }}
+    {{ msg }}
+</form>
+</body>
+</html>

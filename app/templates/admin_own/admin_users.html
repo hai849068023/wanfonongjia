@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for user in users %}
+        <p>{{ user.wxname }}</p>
+        <p>{{ user.truename }}</p>
+        <p>{{ user.tel }}</p>
+    {% endfor %}
+</body>
+</html>
